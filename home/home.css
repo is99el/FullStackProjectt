@@ -1,0 +1,61 @@
+body {
+  background-image: url(/fullstackproject/images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container2 {
+  display: flex;
+  border-style: solid;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 400px;
+  margin-left: 38%;
+  margin-top: 13%;
+  background-color: rgba(0, 0, 0, 0.605);
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 255, 255, 0.7);
+}
+.container2 h1 {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+}
+.container2 a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20%;
+}
+
+#login {
+  border-style: solid;
+  border-color: rgb(0, 39, 131);
+  background-color: rgba(3, 141, 239, 0.758);
+  border-radius: 10px;
+}
+#signup {
+  border-style: solid;
+  border-color: rgb(0, 39, 132);
+  background-color: rgba(3, 141, 239, 0.758);
+  border-radius: 10px;
+}
+
+#login:hover {
+  margin-bottom: 5%;
+  background-color: rgb(1, 32, 137);
+  transition: 0.5s;
+}
+#signup:hover {
+  margin-bottom: 5%;
+  background-color: rgb(1, 32, 137);
+  transition: 0.5s;
+}

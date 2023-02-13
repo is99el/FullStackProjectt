@@ -1,0 +1,11 @@
+body {
+  display: flex;
+}
+
+#welkom {
+  display: flex;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  justify-content: center;
+  align-items: center;
+  margin-left: 38%;
+}
