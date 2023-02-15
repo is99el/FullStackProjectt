@@ -1,3 +1,11 @@
+<?php
+if(isset($_POST['submit'])){
+session_start();
+$_SESSION['user']=$_POST['email'];
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

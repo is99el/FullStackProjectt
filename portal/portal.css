@@ -1,11 +1,75 @@
-body {
+h1 {
+  display: flex;
+  position: absolute;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  align-items: center;
+  margin-left: 42%;
+  margin-top: 20px;
+}
+
+#titel {
   display: flex;
 }
 
-#welkom {
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#sidebar {
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  background: rgb(2, 2, 145);
+  left: -300px;
+  transition: 0.4s;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px 5px rgba(0, 255, 255, 0.7);
+}
+
+#sidebar i {
   display: flex;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  list-style: none;
+  font-size: 20px;
+  padding: 26px 24px;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+}
+#sidebar a {
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  margin-left: 20px;
   justify-content: center;
   align-items: center;
-  margin-left: 38%;
+}
+#sidebar ul {
+  margin-top: 12%;
+}
+
+#sidebar .toggle-btn {
+  position: absolute;
+  top: 30px;
+  left: 330px;
+  margin-top: 20px;
+}
+
+.toggle-btn span {
+  width: 45px;
+  height: 4px;
+  background: #000;
+  display: block;
+  margin-top: 4px;
+}
+
+#sidebar.active {
+  left: 0;
+}
+
+#sidebar a:hover {
+  padding-bottom: 5px;
+
+  color: white;
 }
