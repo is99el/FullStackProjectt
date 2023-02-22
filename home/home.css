@@ -2,6 +2,15 @@ body {
   background-image: url(/fullstackproject/images/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  height: 97vh;
+}
+
+#ff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 13%;
 }
 
 .container2 {
@@ -11,8 +20,6 @@ body {
   align-items: center;
   height: 300px;
   width: 400px;
-  margin-left: 38%;
-  margin-top: 13%;
   background-color: rgba(0, 0, 0, 0.605);
   color: white;
   border-radius: 20px;

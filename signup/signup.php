@@ -9,7 +9,7 @@ $achternaam=$_POST['achternaam'];
 $email=$_POST['email'];
 $wachtwoord=$_POST['wachtwoord'];
 try{
-$sql="INSERT INTO leerling(idLeerling,Email,Naam,Tussenvoegsels,Achternaam,Wachtwoord)  VALUES ($leerlingnummmer,'$email','$naam','$tussenvoegsels','$achternaam','$wachtwoord')";
+$sql="INSERT INTO leerling(idleerling,email,naam,tussenvoegsels,achternaam,wachtword)  VALUES ($leerlingnummmer,'$email','$naam','$tussenvoegsels','$achternaam','$wachtwoord')";
 $stmt = $con->prepare($sql);
 $resul = $stmt->execute();
 if ($resul === false) {
@@ -37,6 +37,7 @@ echo 'het is niet gelukt';
   <title>SignUp</title>
 </head>
 <body>
+<div id="ff">
 <div class="container2">  
 <form action=""method="post">
 <h1>Aanmelden</h1>  
@@ -50,6 +51,6 @@ echo 'het is niet gelukt';
 <a href="/fullstackproject/login/login.php" id="acc">Heb je al een account?</a>
 </form>
 </div>
-</forum>
+</div>
 
 </body>
