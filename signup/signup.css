@@ -1,9 +1,7 @@
 body {
-  background-image: url(/fullstackproject/images/bg.jpg);
+  background-image: url(/fullstackproject/images/111-min.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  height: 97vh;
 }
 
 #ff {
@@ -20,10 +18,10 @@ body {
   height: 600px;
   width: 400px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.605);
+  background-color: rgba(9, 152, 128, 0.819);
   color: white;
-  border-radius: 20px;
-  box-shadow: 0px 5px 10px 0px rgba(0, 255, 255, 0.7);
+  /* border-radius: 20px; */
+  box-shadow: 0px 5px 10px 0px rgba(2, 34, 96, 0.874);
 }
 .container h1 {
   display: flex;
@@ -40,7 +38,7 @@ body {
   display: flex;
   justify-content: space-between;
   border-style: solid;
-  background-color: rgba(3, 120, 193, 0.699);
+  background-color: rgba(5, 108, 176, 0.827);
   padding: 10px;
   color: white;
   width: 280px;
@@ -53,7 +51,7 @@ body {
   width: 85px;
   padding: 10px;
   border-radius: 10px;
-  background-color: rgba(3, 141, 239, 0.758);
+  background-color: rgba(5, 108, 176, 0.827);
   border-color: white;
   border-style: solid;
   margin-bottom: 15%;
@@ -75,41 +73,41 @@ input[value*="Aanmelden"] {
   transition: 0.5s;
   box-shadow: 0px 5px 5px 0px rgba(82, 117, 231, 0.968);
   font-size: 15px;
-  background-color: rgba(1, 33, 137, 0.689);
+  background-color: rgba(1, 41, 149, 0.827);
 }
 #ts:hover {
   margin-bottom: 5px;
   transition: 0.5s;
   box-shadow: 0px 5px 5px 0px rgba(82, 117, 231, 0.968);
   font-size: 15px;
-  background-color: rgba(1, 33, 137, 0.689);
+  background-color: rgba(1, 41, 149, 0.827);
 }
 #ac:hover {
   margin-bottom: 5px;
   transition: 0.5s;
   box-shadow: 0px 5px 5px 0px rgba(82, 117, 231, 0.968);
   font-size: 15px;
-  background-color: rgba(1, 33, 137, 0.689);
+  background-color: rgba(1, 41, 149, 0.827);
 }
 #em:hover {
   margin-bottom: 5px;
   transition: 0.5s;
   box-shadow: 0px 5px 5px 0px rgba(82, 117, 231, 0.968);
   font-size: 15px;
-  background-color: rgba(1, 33, 137, 0.689);
+  background-color: rgba(1, 41, 149, 0.827);
 }
 #ww:hover {
   margin-bottom: 5px;
   transition: 0.5s;
   box-shadow: 0px 5px 5px 0px rgba(82, 117, 231, 0.968);
   font-size: 15px;
-  background-color: rgba(1, 33, 137, 0.689);
+  background-color: rgba(1, 41, 149, 0.827);
 }
 
 #sb:hover {
   font-size: 15px;
   transition: 0.5s;
-  background-color: rgb(1, 32, 137);
+  background-color: rgba(1, 41, 149, 0.827);
 }
 
 #acc {

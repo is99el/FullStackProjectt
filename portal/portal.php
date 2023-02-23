@@ -49,16 +49,22 @@ if ($user) {
   </script> 
   </div>
   <div class="container">
-
 <div class="grid-template-rows">
-<h1>Laatste nieuws!</h1>
+<p id="s">Mijn nieuws!</p>
 <a href="https://nos.nl/artikel/2464685-biden-kiest-warschau-als-podium-voor-nieuwe-speech-en-dat-is-geen-toeval"target="_blank"><img src="/fullstackproject/images/1.jpg"></a>
 <a href="https://nos.nl/collectie/13922/artikel/2464683-dit-weten-we-nu-over-de-nieuwste-aardbevingen-in-turkije-en-syrie"target="_blank"><img src="/fullstackproject/images/2.jpg"></a>
-<a href="https://nos.nl/artikel/2464685-biden-kiest-warschau-als-podium-voor-nieuwe-speech-en-dat-is-geen-toeval"target="_blank"><img src="/fullstackproject/images/1.jpg"></a>
-<a href="https://nos.nl/artikel/2464685-biden-kiest-warschau-als-podium-voor-nieuwe-speech-en-dat-is-geen-toeval"target="_blank"><img src="/fullstackproject/images/1.jpg"></a>
+<a href="https://nos.nl/artikel/2464915-pentagon-publiceert-selfie-van-piloot-met-chinese-ballon"target="_blank"><img src="/fullstackproject/images/3.jpg"></a>
+<a href="https://nos.nl/artikel/2464903-nederlandse-export-naar-rusland-met-bijna-40-procent-afgenomen"target="_blank"><img src="/fullstackproject/images/4.jpg"></a>
+<p id="w">Widgets</p>
+<div class="logos">
+<a href="https://9292.nl/"target="_blank"><img src="/fullstackproject/images/9292.png"></a>
+<a href="https://outlook.live.com/owa/"target="_blank"><img src="/fullstackproject/images/ou.png"></a>
+<a href="https://www.office.com/"target="_blank"><img src="/fullstackproject/images/of.png"></a>
+<a href="https://github.com/"target="_blank"><img src="/fullstackproject/images/git.png"></a>
+</div>
+</div>
+</div>
 
-</div>
-</div>
 </body>
 <script src="https://kit.fontawesome.com/70211edd98.js" crossorigin="anonymous"></script>
 </html>

@@ -1,9 +1,7 @@
 body {
-  background-image: url(/fullstackproject/images/bg.jpg);
+  background-image: url(/fullstackproject/images/111-min.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  height: 97vh;
 }
 
 .container {
@@ -15,13 +13,12 @@ body {
   width: 400px;
   left: 50%;
   position: absolute;
-  top: 40%;
+  top: 48%;
   transform: translate(-50%, -50%);
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.605);
-  color: white;
-  border-radius: 20px;
-  box-shadow: 0px 5px 10px 0px rgba(0, 255, 255, 0.7);
+  background-color: rgba(9, 152, 128, 0.819);
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 10px 0px rgba(2, 34, 96, 0.874);
 }
 .container h1 {
   display: flex;
@@ -35,11 +32,11 @@ body {
 #ww {
   display: flex;
   border-style: solid;
-  background-color: rgba(3, 120, 193, 0.699);
+  background-color: rgba(5, 108, 176, 0.827);
   padding: 10px;
   color: white;
   width: 300px;
-  border-color: white;
+  border-color: rgba(255, 255, 255, 0.827);
   border-radius: 5px;
 }
 
@@ -48,7 +45,7 @@ body {
   width: 85px;
   padding: 10px;
   border-radius: 10px;
-  background-color: rgba(3, 141, 239, 0.758);
+  background-color: rgba(5, 108, 176, 0.827);
   border-color: white;
   border-style: solid;
   margin-bottom: 15%;
@@ -80,7 +77,7 @@ input[value*="Inloggen"] {
 #sb:hover {
   font-size: 15px;
   transition: 0.5s;
-  background-color: rgb(1, 32, 137);
+  background-color: rgba(1, 33, 137, 0.689);
 }
 
 #acc {

@@ -1,16 +1,14 @@
 body {
-  background-image: url(/fullstackproject/images/bg.jpg);
+  background-image: url(/fullstackproject/images/111-min.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  height: 97vh;
 }
 
 #ff {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 13%;
+  margin-top: 10%;
 }
 
 .container2 {
@@ -18,24 +16,24 @@ body {
   border-style: solid;
   justify-content: center;
   align-items: center;
-  height: 300px;
-  width: 400px;
-  background-color: rgba(0, 0, 0, 0.605);
+  height: 350px;
+  width: 450px;
+  background-color: rgba(9, 152, 128, 0.819);
   color: white;
-  border-radius: 20px;
-  box-shadow: 0px 5px 10px 0px rgba(0, 255, 255, 0.7);
+  border-color: white;
+  box-shadow: 0px 5px 10px 0px rgba(2, 34, 96, 0.874);
 }
 .container2 h1 {
   position: absolute;
   align-items: center;
   justify-content: center;
-  margin-bottom: 8%;
+  margin-bottom: 10%;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 20px;
 }
 .container2 a {
   padding: 10px;
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 15px;
   margin: 10px;
@@ -45,24 +43,24 @@ body {
 
 #login {
   border-style: solid;
-  border-color: rgb(0, 39, 131);
-  background-color: rgba(3, 141, 239, 0.758);
-  border-radius: 10px;
+  border-color: rgba(2, 37, 91, 0.827);
+  background-color: rgba(5, 108, 176, 0.827);
+  color: white;
 }
 #signup {
   border-style: solid;
-  border-color: rgb(0, 39, 132);
-  background-color: rgba(3, 141, 239, 0.758);
-  border-radius: 10px;
+  border-color: rgba(1, 28, 103, 0.827);
+  background-color: rgba(5, 108, 176, 0.827);
+  color: white;
 }
 
 #login:hover {
   margin-bottom: 5%;
-  background-color: rgb(1, 32, 137);
+  background-color: rgba(1, 41, 149, 0.827);
   transition: 0.5s;
 }
 #signup:hover {
   margin-bottom: 5%;
-  background-color: rgb(1, 32, 137);
+  background-color: rgba(1, 41, 149, 0.827);
   transition: 0.5s;
 }
