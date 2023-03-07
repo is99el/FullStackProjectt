@@ -1,23 +1,29 @@
 <?php
+session_start();
 require 'conecntion.php';
 
-$email=trim($_POST['email']);
+
+$idleerling=trim($_POST['idleerling']);
 $password=trim($_POST['wachtwoord']);
 //prepare the statement
-$stmt = $con->prepare("SELECT * FROM leerling WHERE email=?  AND wachtword=?");
+$stmt = $con->prepare("SELECT * FROM leerling WHERE idleerling=?  AND wachtword=?");
 //execute the statement
-$stmt->execute([$email, $password]);
+$stmt->execute([$idleerling, $password]);
 //fetch result
 $user = $stmt->fetch();
 if ($user) {
-    echo '<h1 id="welkom">Welkom in het portaal</h1>';
+  $_SESSION['idleerling']=$idleerling;
+    echo "<h1 id='welkom'>Welkom ".$_SESSION['idleerling']." in het portaal</h1>";
+     
     
 }else {
     echo 'De gegevens kloppen niet of de student bestaat niet!';
     echo "<p><a href='/fullstackproject/signup/signup.php'>Aanmelden</a></p>";
     echo "<a href='/fullstackproject/login/login.php'>Terug naar inloggen</br></a>";
+  
 
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,15 +45,16 @@ if ($user) {
     <i class="fa-sharp fa-solid fa-house-chimney"><a href="/fullstackproject/portal/portal.php"><li>Home</li></a></i>
     <i class="fa-sharp fa-solid fa-school-circle-xmark"><a href="/fullstackproject/cijfers/cijfers.php"><li>Cijfers</li></a></i> 
     <i class="fa-solid fa-user"><a href="/fullstackproject/profiel/profiel.php"><li>Profiel</li></a></i>
-      
+    <i class="fa-solid fa-power-off"><a href="/fullstackproject/portal/loguit.php" class="button">Uitloggen</a></i>
     </ul>
-  
+   
   <script>
     function show() {
       document.getElementById('sidebar').classList.toggle('active');
     }
   </script> 
   </div>
+  
   <div class="container">
 <div class="grid-template-rows">
 <p id="s">Mijn nieuws!</p>
@@ -64,7 +71,6 @@ if ($user) {
 </div>
 </div>
 </div>
-
 </body>
 <script src="https://kit.fontawesome.com/70211edd98.js" crossorigin="anonymous"></script>
 </html>

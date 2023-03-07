@@ -1,11 +1,3 @@
-<?php
-if(isset($_POST['submit'])){
-session_start();
-$_SESSION['user']=$_POST['email'];
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +12,7 @@ $_SESSION['user']=$_POST['email'];
   <div class="container">  
 <form action="/fullstackproject/portal/portal.php"method="post">
 <h1>Inloggen</h1>  
-   <input type="email" name="email" id="em" placeholder="Email"></br>
+   <input type="text" name="idleerling" id="em" placeholder="Leerlingnummer"></br>
    <input type="password" name="wachtwoord" id="ww" placeholder="Wachtword"></br>
 <input type="submit" name="submit" id='sb' value="Inloggen">
 <a href="/fullstackproject/signup/signup.php" id="acc">Account aanmaken?</a>

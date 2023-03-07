@@ -19,7 +19,7 @@
     <i class="fa-sharp fa-solid fa-house-chimney"><a href="/fullstackproject/portal/portal.php"><li>Home</li></a></i>
     <i class="fa-sharp fa-solid fa-school-circle-xmark"><a href="/fullstackproject/cijfers/cijfers.php"><li>Cijfers</li></a></i> 
     <i class="fa-solid fa-user"><a href="/fullstackproject/profiel/profiel.php"><li>Profiel</li></a></i>
-      
+    <i class="fa-solid fa-power-off"><a href="/fullstackproject/portal/loguit.php" class="button">Uitloggen</a></i>
     </ul>
   
   <script>
@@ -43,9 +43,10 @@
         <tbody>
 <?php
 require 'conecntion.php';
+session_start();
+$idleerling=$_SESSION['idleerling'];
 
-
-$query="SELECT * FROM leerling";
+$query="SELECT * FROM leerling WHERE idleerling=$idleerling";
 $stmt=$con->prepare($query)or die("error1.");
 $stmt->execute() or die ("error 2.");
 

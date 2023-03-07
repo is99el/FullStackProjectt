@@ -77,37 +77,26 @@ h1 {
   color: white;
 }
 
+.container {
+  position: absolute;
+  width: 800px;
+  height: 220px;
+  z-index: -4;
+  background-color: gray;
+  margin-left: 23%;
+  margin-top: 13%;
+}
 table {
-  display: flex;
-  margin-left: 26%;
-  border-style: solid;
-  max-width: 750px;
-  margin-top: 5%;
+  margin-top: 10%;
+  margin-left: 27%;
   background-color: white;
 }
 
 td,
 th {
-  display: flex;
-  padding: 10px;
-  flex-direction: row;
+  padding: 12px;
+  border: 2px solid;
 }
-
-th {
-  border-style: solid;
-  width: 300px;
-  background-color: rgba(92, 92, 92, 0.644);
-  border-width: 1px;
-  margin: 2px;
-}
-td {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 200px;
-  margin-top: 4px;
-}
-
 td:hover {
   font-size: 17px;
   text-decoration: underline;
