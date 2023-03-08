@@ -12,7 +12,7 @@ h1 {
   position: absolute;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   justify-content: center;
-  background-color: #262828;
+  /* background-color: #262828; */
   left: 0;
   right: 0;
   padding: 20px;

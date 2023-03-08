@@ -30,17 +30,21 @@
   </div>
   
 </div>
-<table>
-<div class="container">
+
+<div class="table-container">
+  <table class="table">]
         <thead>
           <tr>
             <th>Leerlingnummer</th>
             <th>Naam</th>
             <th>Tussenvoegsels</th>
             <th>Achternaam</th>
-          <tr>  
+            <th>Email</th>
+            <th>#</th>
+            <tr>  
         </thead>
         <tbody>
+        
 <?php
 require 'conecntion.php';
 session_start();
@@ -52,14 +56,18 @@ $stmt->execute() or die ("error 2.");
 
 while($row=$stmt->fetch()){
     echo "<tr>";
-    echo "<td>".$row['idleerling']."</td>"."<br>";
-    echo "<td>".$row['naam']."</td>"."<br>";
-    echo "<td>".$row['tussenvoegsels']."</td>"."<br>";
-    echo "<td>".$row['achternaam']."</td>"."<br>";
+    echo "<td data-label='Leerlingnummer'>".$row['idleerling']."</td>";
+    echo "<td data-label='Naam'>".$row['naam']."</td>";
+    echo "<td data-label='Tussenvoegsels'>".$row['tussenvoegsels']."</td>";
+    echo "<td data-label='Achternaam'>".$row['achternaam']."</td>";
+    echo "<td data-label='Email'>".$row['email']."</td>";
+    echo "<td data-label='#'><a href='/fullstackproject/profiel/edit.php' class='btn'>Edit</a></td>";
     echo "</tr>";
 }
 
 ?>
+
+<tbody>
    </table>
 </body>
 </html>

@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 body {
   background-color: #cad0d2;
@@ -77,34 +78,47 @@ h1 {
   color: white;
 }
 
-table {
-  display: flex;
-  margin-left: 30%;
-  border-style: solid;
-  border-width: 1px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: 500px;
-  height: 240px;
-  margin-top: 5%;
+.table-container {
+  padding: 0 15%;
+  margin: auto 0;
+}
+.table {
+  width: 100%;
+  margin-top: 15%;
+  border-collapse: collapse;
+}
+
+.table thead {
   background-color: white;
 }
-
-th {
-  display: flex;
+.table thead tr th {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.35px;
+  color: #000000;
+  opacity: 1;
+  padding: 12px;
+  vertical-align: top;
+  border: 1px solid;
 }
 
-td,
-th {
-  display: flex;
-  padding: 10px;
-  flex-direction: row;
-  font-size: 15px;
+.table tbody tr td {
+  font-size: 18px;
+  letter-spacing: 0.35px;
+  color: #f1f1f1;
+  opacity: 1;
+  background-color: #3c3f44;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #dee2e685;
 }
 
-td {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 100px;
+.table tbody tr td .btn {
+  width: 130px;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  display: inline-block;
+  padding: 8px;
+  text-align: center;
 }

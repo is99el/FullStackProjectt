@@ -47,18 +47,17 @@
 require 'conection.php';
 session_start();
 $idleerling=$_SESSION['idleerling'];
-$query="SELECT * FROM cijfers WHERE idleerling=$idleerling";
+$query="SELECT vakken.VkNaam,cijfer FROM vakken_has_leerling INNER JOIN vakken on vakken_has_leerling.vakken_vakid = vakken.vakid WHERE idleerling=$idleerling ";
 $stmt=$con->prepare($query)or die("error1.");
 $stmt->execute() or die ("error 2.");
-
 while($row=$stmt->fetch()){
     echo "<tr>";
-    echo "<td>".$row['nederlands']."</td>"."<br>";
-    echo "<td>".$row['wiskunde']."</td>"."<br>";
-    echo "<td>".$row['engels']."</td>"."<br>";
-    echo "<td>".$row['sport']."</td>"."<br>";
-    echo "<td>".$row['beropesgericht']."</td>"."<br>";
-    echo "<td>".$row['LB']."</td>"."<br>";
+    echo "<td>".$row['cijfer']."</td>"."<br>";
+    echo "<td>".$row['cijfer']."</td>"."<br>";
+    echo "<td>".$row['cijfer']."</td>"."<br>";
+    echo "<td>".$row['cijfer']."</td>"."<br>";
+    echo "<td>".$row['cijfer']."</td>"."<br>";
+    echo "<td>".$row['cijfer']."</td>"."<br>";
     echo "</tr>";
 }
 
