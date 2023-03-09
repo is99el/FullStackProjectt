@@ -12,7 +12,7 @@ h1 {
   position: absolute;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   justify-content: center;
-  /* background-color: #262828; */
+  background-color: #262828;
   left: 0;
   right: 0;
   padding: 20px;
@@ -77,27 +77,47 @@ h1 {
   color: white;
 }
 
-.container {
-  position: absolute;
-  width: 800px;
-  height: 220px;
-  z-index: -4;
-  background-color: gray;
-  margin-left: 23%;
-  margin-top: 13%;
+.table-container {
+  padding: 0 15%;
+  margin: auto 0;
 }
-table {
-  margin-top: 10%;
-  margin-left: 27%;
-  background-color: white;
+.table {
+  width: 100%;
+  margin-top: 15%;
+  border-collapse: collapse;
 }
 
-td,
-th {
-  padding: 12px;
-  border: 2px solid;
+.table thead {
+  background-color: white;
 }
-td:hover {
-  font-size: 17px;
-  text-decoration: underline;
+.table thead tr th {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.35px;
+  color: #000000;
+  opacity: 1;
+  padding: 12px;
+  vertical-align: top;
+  border: 1px solid;
+}
+
+.table tbody tr td {
+  font-size: 18px;
+  letter-spacing: 0.35px;
+  color: #f1f1f1;
+  opacity: 1;
+  background-color: #3c3f44;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #dee2e685;
+}
+
+.table tbody tr td .btn {
+  width: 130px;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  display: inline-block;
+  padding: 8px;
+  text-align: center;
 }

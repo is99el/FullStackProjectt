@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'conecntion.php';
+require 'conection.php';
 
 
 $idleerling=trim($_POST['idleerling']);

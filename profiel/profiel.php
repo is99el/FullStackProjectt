@@ -32,7 +32,7 @@
 </div>
 
 <div class="table-container">
-  <table class="table">]
+  <table class="table">
         <thead>
           <tr>
             <th>Leerlingnummer</th>
@@ -46,7 +46,7 @@
         <tbody>
         
 <?php
-require 'conecntion.php';
+require 'conection.php';
 session_start();
 $idleerling=$_SESSION['idleerling'];
 

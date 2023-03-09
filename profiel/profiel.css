@@ -5,8 +5,6 @@
 }
 body {
   background-color: #cad0d2;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 h1 {
   display: flex;
@@ -83,9 +81,11 @@ h1 {
   margin: auto 0;
 }
 .table {
-  width: 100%;
+  width: 70%;
+  margin-left: 18px;
   margin-top: 15%;
   border-collapse: collapse;
+  position: absolute;
 }
 
 .table thead {

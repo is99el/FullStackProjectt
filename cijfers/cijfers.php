@@ -30,16 +30,16 @@
   </div>
   
 </div>
-<table>
-<div class="container">
+<div class="table-container">
+  <table class="table">
         <thead>
           <tr>
-            <th>Nederlands</th>
-            <th>Wiskunde</th>
-            <th>Engels</th>
-            <th>Sport</th>
             <th>Beroepsgericht</th>
+            <th>Engels</th>
             <th>Loopbaan en burgerschap</th>
+            <th>Nederlands</th>
+            <th>Sport</th>
+            <th>Wiskunde</th>
           <tr>  
         </thead>
         <tbody>
@@ -47,22 +47,21 @@
 require 'conection.php';
 session_start();
 $idleerling=$_SESSION['idleerling'];
-$query="SELECT vakken.VkNaam,cijfer FROM vakken_has_leerling INNER JOIN vakken on vakken_has_leerling.vakken_vakid = vakken.vakid WHERE idleerling=$idleerling ";
+$query="SELECT vakken.VkNaam,cijfer FROM vakken_has_leerling INNER JOIN vakken on vakken_has_leerling.vakken_vakid = vakken.vakid WHERE leerling_idleerling=$idleerling";
 $stmt=$con->prepare($query)or die("error1.");
 $stmt->execute() or die ("error 2.");
+echo "<tr>";
 while($row=$stmt->fetch()){
-    echo "<tr>";
-    echo "<td>".$row['cijfer']."</td>"."<br>";
-    echo "<td>".$row['cijfer']."</td>"."<br>";
-    echo "<td>".$row['cijfer']."</td>"."<br>";
-    echo "<td>".$row['cijfer']."</td>"."<br>";
-    echo "<td>".$row['cijfer']."</td>"."<br>";
-    echo "<td>".$row['cijfer']."</td>"."<br>";
-    echo "</tr>";
+     echo "<td>".$row['cijfer']."</td>"."<br>";
+     
+    
+   
+    
 }
-
+echo "</tr>";
 ?>
-  </table>
+  <tbody>
+   </table>
 </body>
 <script src="https://kit.fontawesome.com/70211edd98.js" crossorigin="anonymous"></script>
 </html>

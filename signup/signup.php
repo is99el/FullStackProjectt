@@ -1,5 +1,5 @@
 <?php
-require 'conecntion.php';
+require 'conection.php';
 
 
 if(isset($_POST['submit'])){
@@ -14,10 +14,83 @@ $sql="INSERT INTO leerling(idleerling,email,naam,tussenvoegsels,achternaam,wacht
 $stmt = $con->prepare($sql);
 $resul = $stmt->execute();
 if ($resul === false) {
-    echo "Niet Aangemaakt";
+    echo '<script>alert("Je account is niet aangemaakt")</script>';
 } else {
-echo '<script>alert("Je account is aangemaakt")</script>';
-header("Location: /fullstackproject/login/login.php");
+  echo '
+  <div class="popup">
+        
+        <h2>Welkom!</h2>
+        <p>
+            Uw account is aangemaakt
+        </p>
+        <a href="/fullstackproject/login/login.php">Log In!</a>
+    </div>
+    <!--Script-->
+    <script>
+    window.addEventListener("load", function(){
+      setTimeout(
+          function open(event){
+              document.querySelector(".popup").style.display = "block";
+          },
+          1000
+      )
+  });
+  
+  
+ </script>
+    <style>
+    body{
+      background-image: url(/fullstackproject/images/111-min.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    h2{
+      color:white;
+    }
+      .popup{
+      background-color: rgba(9, 152, 128, 0.819);
+      width: 450px;
+      padding: 30px 40px;
+      position: absolute;
+      transform: translate(-50%,-50%);
+      left: 50%;
+      top: 50%;
+      border-radius: 8px;
+      font-family: "Poppins",sans-serif;
+      display: none;
+      text-align: center;
+  }
+  .popup button{
+      display: block;
+      margin:  0 0 20px auto;
+      background-color: transparent;
+      font-size: 30px;
+      color: #c5c5c5;
+      border: none;
+      outline: none;
+      cursor: pointer;
+  }
+  .popup p{
+    color:white;
+      font-size: 14px;
+      text-align: justify;
+      margin: 20px 0;
+      margin-left:3%;
+      line-height: 25px;
+  }
+  a{
+      display: block;
+      width: 150px;
+      position: relative;
+      margin: 10px auto;
+      text-align: center;
+      background-color: rgba(5, 108, 176, 0.827);
+      color: #ffffff;
+      text-decoration: none;
+      padding: 5px 0;
+  }</style>
+  ';
+
 die();
 }
 }catch(PDOException $abc){
