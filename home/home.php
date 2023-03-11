@@ -13,6 +13,7 @@
   <h1>Welkom in het portaal voor studenten</h1>
 <a href="/fullstackproject/login/login.php" id="login">Inloggen</a>
 <a href="/fullstackproject/signup/signup.php" id="signup">Aanmelden</a>
+<a href="/fullstackproject/login/docenten/login.php" id="docenten">Bent u een docent?</a>
 
 </div>
 </div>

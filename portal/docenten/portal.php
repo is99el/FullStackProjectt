@@ -3,23 +3,23 @@ session_start();
 require 'conection.php';
 
 
-$idleerling=trim($_POST['idleerling']);
+$idDocent=trim($_POST['idDocent']);
 $password=trim($_POST['wachtwoord']);
 //prepare the statement
-$stmt = $con->prepare("SELECT * FROM leerling WHERE idleerling=?  AND wachtword=?");
+$stmt = $con->prepare("SELECT * FROM docent WHERE idDocent=?  AND wachtwoord=?");
 //execute the statement
-$stmt->execute([$idleerling, $password]);
+$stmt->execute([$idDocent, $password]);
 //fetch result
 $user = $stmt->fetch();
 if ($user) {
-  $_SESSION['idleerling']=$idleerling;
+  $_SESSION['idDocent']=$idDocent;
     echo "<h1 id='welkom'>Welkom ".$user['naam']." in het portaal</h1>";
      
     
 }else {
-    echo 'De gegevens kloppen niet of de student bestaat niet!';
-    echo "<p><a href='/fullstackproject/signup/signup.php'>Aanmelden</a></p>";
-    echo "<a href='/fullstackproject/login/login.php'>Terug naar inloggen</br></a>";
+    echo 'De gegevens kloppen niet of de docent bestaat niet!';
+    echo "<p><a href='/fullstackproject/signup/docenten/signup.php'>Aanmelden</a></p>";
+    echo "<a href='/fullstackproject/login/docenten/login.php'>Terug naar inloggen</br></a>";
   
 
 }
@@ -42,10 +42,10 @@ if ($user) {
       <span></span>
     </div>
     <ul>
-    <i class="fa-sharp fa-solid fa-house-chimney"><a href="/fullstackproject/portal/portal.php"><li>Home</li></a></i>
-    <i class="fa-sharp fa-solid fa-school-circle-xmark"><a href="/fullstackproject/cijfers/cijfers.php"><li>Cijfers</li></a></i> 
-    <i class="fa-solid fa-user"><a href="/fullstackproject/profiel/profiel.php"><li>Profiel</li></a></i>
-    <i class="fa-solid fa-power-off"><a href="/fullstackproject/portal/loguit.php" class="button">Uitloggen</a></i>
+    <i class="fa-sharp fa-solid fa-house-chimney"><a href="/fullstackproject/portal/docenten/portal.php"><li>Home</li></a></i>
+    <i class="fa-sharp fa-solid fa-school-circle-xmark"><a href="/fullstackproject/cijfers/docenten/cijfers.php"><li>Resultaten</li></a></i> 
+    <i class="fa-solid fa-user"><a href="/fullstackproject/profiel/docenten/profiel.php"><li>Profiel</li></a></i>
+    <i class="fa-solid fa-power-off"><a href="/fullstackproject/portal/docenten/loguit.php" class="button">Uitloggen</a></i>
     </ul>
    
   <script>

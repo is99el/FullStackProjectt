@@ -10,6 +10,12 @@ body {
   align-items: center;
   margin-top: 10%;
 }
+#docenten {
+  color: white;
+  position: absolute;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
 
 .container2 {
   display: flex;
@@ -29,7 +35,7 @@ body {
   justify-content: center;
   margin-bottom: 10%;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 20px;
+  font-size: 16px;
 }
 .container2 a {
   padding: 10px;

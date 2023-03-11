@@ -52,7 +52,7 @@ $stmt=$con->prepare($query)or die("error1.");
 $stmt->execute() or die ("error 2.");
 echo "<tr>";
 while($row=$stmt->fetch()){
-     echo "<td>".$row['cijfer']."</td>"."<br>";
+     echo "<td>".$row['cijfer']."</td>";
      
     
    
