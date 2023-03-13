@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profiel</title>
-  <link rel="stylesheet" href="profiel.css">
+  <link rel="stylesheet" href="leerlingen.css">
 </head>
 <body>
 <h1>Profiel</h1>
@@ -16,10 +16,10 @@
       <span></span>
     </div>
     <ul>
-    <i class="fa-sharp fa-solid fa-house-chimney"><a href="/fullstackproject/portal/docenten/portal.php"><li>Home</li></a></i>
-    <i class="fa-sharp fa-solid fa-school-circle-xmark"><a href="/fullstackproject/cijfers/docenten/leerlingen.php"><li>Leerlingen</li></a></i> 
-    <i class="fa-solid fa-user"><a href="/fullstackproject/profiel/docenten/profiel.php"><li>Profiel</li></a></i>
-    <i class="fa-solid fa-power-off"><a href="/fullstackproject/portal/docenten/loguit.php" class="button">Uitloggen</a></i>
+    <i class="fa-sharp fa-solid fa-house-chimney"><a href="/fullstackproject/portal/portal.php"><li>Home</li></a></i>
+    <i class="fa-sharp fa-solid fa-school-circle-xmark"><a href="/fullstackproject/cijfers/cijfers.php"><li>Cijfers</li></a></i> 
+    <i class="fa-solid fa-user"><a href="/fullstackproject/profiel/profiel.php"><li>Profiel</li></a></i>
+    <i class="fa-solid fa-power-off"><a href="/fullstackproject/portal/loguit.php" class="button">Uitloggen</a></i>
     </ul>
   
   <script>
@@ -50,18 +50,21 @@ require 'conection.php';
 session_start();
 $idDocent=$_SESSION['idDocent'];
 
-$query="SELECT * FROM docent WHERE idDocent=$idDocent";
+
+$query="SELECT * FROM leerling ";
 $stmt=$con->prepare($query)or die("error1.");
 $stmt->execute() or die ("error 2.");
 
 while($row=$stmt->fetch()){
     echo "<tr>";
-    echo "<td data-label='ID Nummer'>".$row['idDocent']."</td>";
+    echo "<td data-label='Leerlingnummer'>".$row['idleerling']."</td>";
     echo "<td data-label='Naam'>".$row['naam']."</td>";
     echo "<td data-label='Tussenvoegsels'>".$row['tussenvoegsels']."</td>";
     echo "<td data-label='Achternaam'>".$row['achternaam']."</td>";
     echo "<td data-label='Email'>".$row['email']."</td>";
-    echo "<td data-label='#'><a href='/fullstackproject/profiel/docenten/edit.php' class='btn'>Edit</a></td>";
+    echo "<td data-label='#'>
+    <a href='leerlingen.php?id=".$row['idleerling']."'
+    class='btn'>Verwijderen</a></td>";
     echo "</tr>";
 }
 

@@ -1,0 +1,131 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: #cad0d2;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1 {
+  display: flex;
+  position: absolute;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  justify-content: center;
+  background-color: #262828;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+}
+
+#sidebar {
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  background: #333434;
+  left: -300px;
+  transition: 0.4s;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px 5px rgba(255, 255, 255, 0.534);
+}
+
+#sidebar i {
+  display: flex;
+  list-style: none;
+  font-size: 20px;
+  padding: 26px 24px;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+}
+#sidebar a {
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+}
+#sidebar ul {
+  margin-top: 12%;
+}
+
+#sidebar .toggle-btn {
+  position: absolute;
+  top: 10px;
+  left: 330px;
+  margin-top: 20px;
+}
+
+.toggle-btn span {
+  width: 45px;
+  height: 4px;
+  background: #ffffff;
+  display: block;
+  margin-top: 4px;
+}
+
+#sidebar.active {
+  left: 0;
+}
+
+#sidebar a:hover {
+  padding-bottom: 5px;
+
+  color: white;
+}
+
+.table-container {
+  padding: 0 15%;
+  margin: auto 0;
+}
+.table {
+  width: 55%;
+  margin-top: 15%;
+  margin-left: 5%;
+  position: absolute;
+  border-collapse: collapse;
+}
+
+.table thead {
+  background-color: white;
+}
+.table thead tr th {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.35px;
+  color: #000000;
+  opacity: 1;
+  padding: 12px;
+  vertical-align: top;
+  border: 1px solid;
+}
+
+.table tbody tr td {
+  font-size: 18px;
+  letter-spacing: 0.35px;
+  color: #f1f1f1;
+  opacity: 1;
+  background-color: #3c3f44;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #dee2e685;
+}
+
+.table tbody tr td .btn {
+  width: 130px;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  display: inline-block;
+  padding: 8px;
+  text-align: center;
+}
+
+#sb {
+  padding: 10px;
+  background-color: red;
+  color: white;
+}

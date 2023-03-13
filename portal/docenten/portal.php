@@ -43,7 +43,7 @@ if ($user) {
     </div>
     <ul>
     <i class="fa-sharp fa-solid fa-house-chimney"><a href="/fullstackproject/portal/docenten/portal.php"><li>Home</li></a></i>
-    <i class="fa-sharp fa-solid fa-school-circle-xmark"><a href="/fullstackproject/cijfers/docenten/cijfers.php"><li>Resultaten</li></a></i> 
+    <i class="fa-sharp fa-solid fa-school-circle-xmark"><a href="/fullstackproject/cijfers/docenten/leerlingen.php"><li>Leerlingen</li></a></i> 
     <i class="fa-solid fa-user"><a href="/fullstackproject/profiel/docenten/profiel.php"><li>Profiel</li></a></i>
     <i class="fa-solid fa-power-off"><a href="/fullstackproject/portal/docenten/loguit.php" class="button">Uitloggen</a></i>
     </ul>
